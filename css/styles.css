@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: hsl(230, 17%, 14%);
+}
+
+.container{
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid #fff;
+}
+
+.container__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.container__header h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+    color: #fff;
+}
+
+.container__header p{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+}
+
+
+
+.container__main{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: 260px 50px repeat(2, 150px);
+}
+
+.container__main-text{
+    grid-column: 1/5;
+}
+
+.container__main-item{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 4px;
+
+
+}
+
+
+.container__main-item--social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container__main-item--social img{
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
+.container__main-item--social p{
+    color: hsl(228, 34%, 66%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.container__main-item-followers{
+    margin: 10px 0 25px 0;
+}
+
+.container__main-item-followers--big {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 48px;
+}
+
+.container__main-item-followers--small{
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+}
+
+.container__main-item-update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container__main-item-update p{
+    color: hsl(146, 68%, 55%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.container__main-item-update img{
+    width: 7px;
+    height: 7px;
+    margin-right: 6px;
+}
