@@ -6,7 +6,8 @@ const cardsText = document.getElementsByClassName('container__main-item-follower
 const cardsStats = document.getElementsByClassName('container__main-stats');
 const cardsStatsText = document.getElementsByClassName('container__main-stats-item-views');
 const h2 = document.getElementById('h2-text')
-
+const textDarkMode = document.getElementById('textDarkMode');
+const overViewText = document.getElementById('overViewText');
 
 
 btn.addEventListener('click', function(){
@@ -14,6 +15,8 @@ btn.addEventListener('click', function(){
     body.classList.toggle('whiteBody')
     h2.classList.toggle('whiteText')
     this.classList.toggle('whiteButton')
+    textDarkMode.classList.toggle('whiteText')
+    overViewText.classList.toggle('whiteText')
     
 
     for(let i = 0; i < cards.length; i++){
